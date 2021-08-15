@@ -1,0 +1,104 @@
+* {
+    font-family: Roboto, sans-serif;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1rem;
+}
+
+nav {
+    padding-left: 1rem;
+}
+
+.navbar-brand {
+    padding: 0;
+}
+
+.container {
+    margin-top: 1.5rem;
+}
+
+legend {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+button, input {
+    border: 0.1rem solid black;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+button:hover, option:hover {
+    background-color: #cccccc;
+    box-shadow: #000000 0px 0px 4px;
+}
+
+input[type=text] {
+    width: 100%;
+}
+
+#cart {
+    width: 100%;
+}
+
+#cost {
+    font-size: 1.2rem;
+}
+
+.pizza_img {
+    border: 0;
+}
+
+fieldset {
+    margin-bottom: 2rem;
+}
+
+label {
+    font-weight: lighter;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    legend {
+        font-size: 1rem;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    legend {
+        font-size: 1.2rem;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    legend {
+        font-size: 1.3rem;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    legend {
+        font-size: 1.5rem;
+    }
+}
