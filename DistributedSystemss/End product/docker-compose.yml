@@ -1,0 +1,227 @@
+version: "3"
+services:
+  vs_participant1:
+    container_name: vs_participant1
+    build:
+      context: ./Participant
+      dockerfile: Dockerfile
+    environment:
+      - DOCKER_START=1
+      - DESTINATION=vs_central1
+      - TOPIC=sensor_central1
+      - REPLY=central1_Connection
+      - TCP_PORT=8000
+      - PRODUCER_COUNT=2
+      - CONSUMER_COUNT=3
+      - RPC_PORT=9090
+      - DESTINATION_RPC=vs_central1
+      - MOSQUITTO_DESTINATION=mosquitto
+    expose:
+      - 80/tcp
+      - 8000/tcp
+      - 1883/tcp
+      - 9090/tcp
+    depends_on:
+      - "vs_central1"
+    links:
+      - vs_central1
+    mem_limit: 500M
+
+
+  vs_central1:
+    container_name: vs_central1
+    build:
+      context: ./Central
+      dockerfile: Dockerfile
+    environment:
+      - DOCKER_START=1
+      - DESTINATION=vs_central2-802;vs_central3-803
+      - TOPIC=sensor_central1
+      - REPLY=central1_Connection
+      - TCP_PORT=80
+      - RPC_SERVER_PORT=805
+      - RPC_CLIENT_PORT=9090
+      - DESTINATION_RPC_CLIENT=vs_participant1
+      - RPC_Server_Host=vs_externalclient
+      - MOSQUITTO_DESTINATION=mosquitto
+    expose:
+      - 85/tcp
+      - 80/tcp
+      - 8000/tcp
+      - 801/tcp
+      - 802/tcp
+      - 803/tcp
+      - 1883/tcp
+      - 9090/tcp
+      - 805/tcp
+    depends_on:
+      - "mosquitto"
+    links:
+      - "mosquitto"
+      - vs_central3
+    ports:
+      - "80:80"
+    mem_limit: 500M
+
+  vs_participant2:
+    container_name: vs_participant2
+    build:
+      context: ./Participant
+      dockerfile: Dockerfile
+    environment:
+      - DOCKER_START=1
+      - DESTINATION=vs_central2
+      - TOPIC=sensor_central2
+      - REPLY=central2_Connection
+      - TCP_PORT=8000
+      - PRODUCER_COUNT=2
+      - CONSUMER_COUNT=3
+      - RPC_PORT=9090
+      - DESTINATION_RPC=vs_central2
+      - MOSQUITTO_DESTINATION=mosquitto
+    expose:
+      - 80/tcp
+      - 8000/tcp
+      - 1883/tcp
+      - 9090/tcp
+    depends_on:
+      - "vs_central2"
+    links:
+      - vs_central2
+    mem_limit: 500M
+
+
+  vs_central2:
+    container_name: vs_central2
+    build:
+      context: ./Central
+      dockerfile: Dockerfile
+    environment:
+      - DOCKER_START=1
+      - DESTINATION=vs_central1-802;vs_central3-804
+      - TCP_PORT=80
+      - TOPIC=sensor_central2
+      - REPLY=central2_Connection
+      - RPC_SERVER_PORT=806
+      - RPC_CLIENT_PORT=9090
+      - DESTINATION_RPC_CLIENT=vs_participant2
+      - RPC_Server_Host=vs_externalclient
+      - MOSQUITTO_DESTINATION=mosquitto
+    expose:
+      - 90/tcp
+      - 8000/tcp
+      - 801/tcp
+      - 802/tcp
+      - 803/tcp
+      - 1883/tcp
+      - 9090/tcp
+      - 806/tcp
+    links:
+      - vs_central3
+      - mosquitto
+    ports:
+      - "85:80"
+    depends_on:
+      - "mosquitto"
+    mem_limit: 500M
+
+  vs_participant3:
+    container_name: vs_participant3
+    build:
+      context: ./Participant
+      dockerfile: Dockerfile
+    environment:
+      - DOCKER_START=1
+      - DESTINATION=vs_central3
+      - TOPIC=sensor_central3
+      - REPLY=central3_Connection
+      - TCP_PORT=8000
+      - PRODUCER_COUNT=2
+      - CONSUMER_COUNT=3
+      - RPC_PORT=9090
+      - DESTINATION_RPC=vs_central3
+      - MOSQUITTO_DESTINATION=mosquitto
+    expose:
+      - 80/tcp
+      - 8000/tcp
+      - 1883/tcp
+      - 9090/tcp
+    depends_on:
+      - "vs_central3"
+    links:
+      - vs_central3
+    mem_limit: 500M
+
+
+  vs_central3:
+    container_name: vs_central3
+    build:
+      context: ./Central
+      dockerfile: Dockerfile
+    environment:
+      - DOCKER_START=1
+      - DESTINATION=vs_central1-803;vs_central2-804
+      - TCP_PORT=100
+      - TOPIC=sensor_central3
+      - REPLY=central3_Connection
+      - RPC_SERVER_PORT=807
+      - RPC_CLIENT_PORT=9090
+      - DESTINATION_RPC_CLIENT=vs_participant3
+      - RPC_Server_Host=vs_externalclient
+      - MOSQUITTO_DESTINATION=mosquitto
+    expose:
+      - 80/tcp
+      - 100/tcp
+      - 8000/tcp
+      - 801/tcp
+      - 802/tcp
+      - 803/tcp
+      - 1883/tcp
+      - 9090/tcp
+      - 807/tcp
+    ports:
+      - "100:100"
+    depends_on:
+      - "mosquitto"
+    links:
+      - mosquitto
+    mem_limit: 500M
+
+
+  vs_externalclient:
+    image: vs/externalclient
+    container_name: vs_externalclient
+    build:
+      context: ./ExternalClient
+      dockerfile: Dockerfile
+    environment:
+      - DOCKER_START=1
+      - RPCDESTINATION=vs_central1-805;vs_central2-806;vs_central3-807
+      - RPCPORT=800
+    expose:
+      - 805/tcp
+      - 806/tcp
+      - 807/tcp
+    depends_on:
+      - "vs_central1"
+      - "vs_central2"
+      - "vs_central3"
+    links:
+      - vs_central1
+      - vs_central2
+      - vs_central3
+    mem_limit: 500M
+
+
+  mosquitto:
+    image: eclipse-mosquitto
+    container_name: mosquitto
+    expose:
+      - "1883"
+      - "9001"
+    ports:
+      - 1883:1883
+      - 8883:8883
+    volumes:
+      - ./mosquitto.conf:/mosquitto/config/mosquitto.conf
+    restart: unless-stopped
