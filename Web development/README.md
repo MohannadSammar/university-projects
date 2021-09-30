@@ -1,6 +1,8 @@
 # Before we start! 
 This Software was part of the subject "Web Development" in which we learned about how to use HTML,PHP,CSS,AJAX, JS and many others.
 
+In this project we Started off by Learning how to write simple HTML and simple styling. after that we dove into the PHP word and how to use php,ajax nad other Web componenets effectively. Styling wasnt the main Part of this Course, so the websites dont look really good 😅
+
 This project was written by me and Another person in my Team. 
 
 The Code Quality of this project doesnt reflect my current code capabilities , The more we code the more we learn and our code gets better and better, i could refactor the Project but it would be too time consuming   
