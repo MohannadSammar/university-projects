@@ -1,3 +1,12 @@
+# Before we start! 
+This Software was part of the subject "Web Development" in which we learned about how to use HTML,PHP,CSS,AJAX, JS and many others.
+
+This project was written by me and Another person in my Team. 
+
+The Code Quality of this project doesnt reflect my current code capabilities , The more we code the more we learn and our code gets better and better, i could refactor the Project but it would be too time consuming   
+
+Enjoy
+
 # EWA Docker Setup
 You know about [Docker](https://www.docker.com) and Docker is running on your system? You do not want to mess up your system by installing a web server and all the fancy software you need for EWA?
 
