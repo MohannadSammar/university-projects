@@ -1,0 +1,17 @@
+{
+    "moduleFileExtensions": ["js", "ts", "tsx"],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "ts-jest"
+    },
+    "globals": {
+      "ts-jest": {
+        "tsConfig": "tsconfig.json"
+      }
+    },
+    "coveragePathIgnorePatterns": [
+      "ormconfig.js"
+    ],
+    "testMatch": ["**/test/**/*.test.+(ts|tsx)"],
+    "preset": "ts-jest"
+  }
+  

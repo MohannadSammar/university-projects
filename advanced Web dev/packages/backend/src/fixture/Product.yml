@@ -1,0 +1,73 @@
+entity: Product
+items:
+  # <--- Phones --->
+  # <--- category0 --->
+  product0:
+    name: Iphone 13
+    image: https://cdn.idealo.com/folder/Product/201438/9/201438968/s1_produktbild_gross/apple-iphone-13.jpg
+    manufacturer: Apple
+    price: 779.00
+    category: '@category0'
+  product1:
+    name: P50 Pro
+    image: https://cdn.idealo.com/folder/Product/201487/9/201487904/s1_produktbild_gross/huawei-p50-pro.jpg
+    manufacturer: Huawei
+    price: 1179.00
+    category: '@category0'
+  product2:
+    name: Galaxy A12
+    image: https://cdn.idealo.com/folder/Product/200978/7/200978735/s1_produktbild_gross/samsung-galaxy-a12.jpg
+    manufacturer: Samsung 
+    price: 139.00
+    category: '@category0'
+  # <-- Grafikkarten -->
+  # <--- category1 --->
+  product3:
+    name: GTX1650
+    image: https://cdn.idealo.com/folder/Product/6541/9/6541907/s1_produktbild_gross/asus-gtx1650.jpg
+    manufacturer: ASUS
+    price: 289.00
+    category: '@category1'
+  product4:
+    name: RTX3060
+    image: https://cdn.idealo.com/folder/Product/201146/2/201146263/s1_produktbild_gross/asus-rtx3060.jpg
+    manufacturer: ASUS
+    price: 619.00
+    category: '@category1'
+  product5:
+    name: RTX 3090
+    image: https://cdn.idealo.com/folder/Product/200626/2/200626289/s1_produktbild_gross/gigabyte-geforce-rtx-3090.jpg
+    manufacturer: GigaByte
+    price: 2299.00
+    category: '@category1'
+  # <-- @category2 -->
+  product6:
+    name: Red SATA III
+    image: https://cdn.idealo.com/folder/Product/3412/4/3412409/s3_produktbild_gross/western-digital-red-sata-iii.jpg
+    manufacturer: Western Digital
+    price: 57.77
+    category: '@category2'
+  product7:
+    name: 870 Evo 2.5
+    image: https://cdn.idealo.com/folder/Product/201032/8/201032815/s3_produktbild_gross/samsung-870-evo-2-5.jpg
+    manufacturer: Samsung
+    price: 57.62
+    category: '@category2'
+  product9:
+    name: TL-MR6400
+    image: https://cdn.idealo.com/folder/Product/4911/1/4911156/s3_produktbild_gross/tp-link-tl-mr6400.jpg
+    manufacturer: TP-Link
+    price: 75.20
+    category: '@category3'
+  product10:
+    name: ROG Rapture GT-AXE11000
+    image: https://cdn.idealo.com/folder/Product/201812/5/201812565/s3_produktbild_gross/asus-rog-rapture-gt-axe11000.jpg
+    manufacturer: Asus
+    price: 576.30
+    category: '@category3'
+  product11:
+    name: TL-R470T+
+    image: https://cdn.idealo.com/folder/Product/2717/4/2717466/s3_produktbild_gross/tp-link-tl-r470t.jpg
+    manufacturer: TP-Link
+    price: 35.41
+    category: '@category3'

@@ -1,0 +1,9 @@
+version: "3.7"
+services:
+  backend:
+    command: npm run test
+    environment:
+      NODE_ENV: test 
+
+  frontend:
+    command: npm run test

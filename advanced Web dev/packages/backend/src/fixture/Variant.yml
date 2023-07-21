@@ -1,0 +1,75 @@
+entity: Variant
+items:
+  variant0:
+    name: 256GB Rose
+    image: https://cdn.idealo.com/folder/Product/201572/7/201572738/s1_produktbild_gross/apple-iphone-13-256gb-rose.jpg
+    price: 879.00
+    product: '@product0'
+  variant1:
+    name: 64GB Blue
+    image: https://cdn.idealo.com/folder/Product/200991/2/200991260/s1_produktbild_gross/samsung-galaxy-a12-64gb-blau.jpg
+    price: 159.00
+    product: '@product2'
+  variant2:
+    name: 128GB White
+    image: https://cdn.idealo.com/folder/Product/201487/9/201487966/s1_produktbild_gross/huawei-p50-pro-256gb-cocoa-gold.jpg
+    price: 178.00
+    product: '@product2'
+  variant3:
+    name:  TUF-GTX1650-4GD6-P-GAMING (4GB) 
+    image: https://cdn.idealo.com/folder/Product/200844/6/200844670/s1_produktbild_gross/asus-tuf-gtx1650-4gd6-p-gaming-4gb.jpg
+    price: 399.96
+    product: '@product3'
+  variant4:
+    name:  ROG-STRIX-GTX1650-A4GD6-GAMING (4GB) 
+    image: https://cdn.idealo.com/folder/Product/200419/7/200419798/s1_produktbild_gross/asus-rog-strix-gtx1650-a4gd6-gaming-4gb.jpg
+    price: 363.41
+    product: '@product3'
+  variant5:
+    name:  DUAL-RTX3060-12G-V2 
+    image: https://cdn.idealo.com/folder/Product/201729/4/201729403/s1_produktbild_gross/asus-dual-rtx3060-12g-v2.jpg
+    price: 869.00
+    product: '@product4'
+  variant6:
+    name: TUF-RTX3060-12G-GAMING (12GB) 
+    image: https://cdn.idealo.com/folder/Product/201146/1/201146180/s1_produktbild_gross/asus-tuf-rtx3060-12g-gaming-12gb.jpg 
+    price: 862.45
+    product: '@product4'
+  variant7:
+    name: Aorus Master 24G GDDR6X 
+    image: https://cdn.idealo.com/folder/Product/200825/2/200825201/s1_produktbild_gross/gigabyte-geforce-rtx-3090-aorus-master-24g-gddr6x.jpg
+    price: 2999.00
+    product: '@product5'
+  variant8:
+    name: AORUS Xtreme 24G 
+    image: https://cdn.idealo.com/folder/Product/200825/2/200825201/s1_produktbild_gross/gigabyte-geforce-rtx-3090-aorus-master-24g-gddr6x.jpg
+    price: 4997.50
+    product: '@product5'
+  variant9:
+    name: 256GB Cocoa Gold 
+    image: https://cdn.idealo.com/folder/Product/201487/9/201487966/s1_produktbild_gross/huawei-p50-pro-256gb-cocoa-gold.jpg
+    price: 1179.99
+    product: '@product1'
+  variant10:
+    name: 256GB Golden Black
+    image: https://cdn.idealo.com/folder/Product/201487/9/201487966/s1_produktbild_gross/huawei-p50-pro-256gb-cocoa-gold.jpg
+    price: 1179.99
+    product: '@product1'
+  variant11:
+    name: 2TB (WD20EFAX)
+    image: https://cdn.idealo.com/folder/Product/6586/5/6586558/s3_produktbild_gross/western-digital-red-sata-iii-2tb-wd20efax.jpg
+    price: 71.98
+    product: '@product6'
+  variant12:
+    name: 12TB (WD120EFBX)
+    image: https://cdn.idealo.com/folder/Product/201101/2/201101209/s3_produktbild_gross/western-digital-red-sata-iii-12tb-wd120efbx.jpg
+    price: 312.98
+    product: '@product6'
+  variant13:
+    name: 870 Evo 2.5 4TB
+    image: https://cdn.idealo.com/folder/Product/201032/8/201032820/s3_produktbild_gross/samsung-870-evo-4tb.jpg
+    price: 408.00
+    product: '@product7'
+  
+  
+  

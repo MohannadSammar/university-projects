@@ -1,0 +1,472 @@
+entity: Attribute
+items:
+  # <-- product0 -->
+  attribute0:
+    name: Refresh rate
+    description: 60 Hz
+    product: '@product0'
+  attribute1:
+    name: Refresh rate
+    description: 144 Hz
+    product: '@product0'
+  attribute2:
+    name: Pixel density
+    description: 460 ppi
+    product: '@product0'
+  attribute3:
+    name: Brightness
+    description: 800cd/m²
+    product: '@product0'
+  attribute4:
+    name: Processor Core
+    description: Hexa-Core (6)
+    product: '@product0'
+  attribute5:
+    name: Operating System
+    description: iOS 15
+    product: '@product0'
+  attribute6:
+    name: RAM
+    description: 4 GB
+    product: '@product0'
+    variant: '@variant1'
+  attribute7:
+    name: Sensors
+    description: Proximity Sensor, Accelerometer, Brightness Sensor, Gyro Sensor, Magnetometer, Barometer
+    product: '@product0'
+  attribute8:
+    name: Weight
+    description: 173g
+    product: '@product0'
+  attribute9:
+    name: Internal memory
+    description: 128 GB
+    variant: '@variant2'
+  attribute10:
+    name: Internal memory
+    description: 256 GB
+    variant: '@variant0'
+  attribute11:
+    name: Color
+    description: Rose
+    variant: '@variant0'
+  attribute12:
+    name: RAM
+    description: 4 GB
+    product: '@product3'
+  attribute13:
+    name: Memory Type
+    description: GDDR5
+    product: '@product3'
+  attribute14:
+    name: Memory Bus
+    description: 128 Bit
+    product: '@product3'
+  attribute15:
+    name: Bus Interface
+    description: PCIe
+    product: '@product3'
+  attribute16:
+    name: max. resolution
+    description: 7680 x 4320 pixel
+    product: '@product3'
+  attribute17:
+    name: Cooling
+    description: active
+    product: '@product3'
+  attribute18:
+    name: Chipset-series
+    description: NVIDIA TU117
+    product: '@product3'
+  attribute19:
+    name: Memory clock
+    description: 8.000 MHz
+    variant: '@variant3'
+  attribute20:
+    name: Base Clock
+    description: 1.485 MHz
+    variant: '@variant3'
+  attribute21:
+    name: Memory Clock
+    description: 12.000 MHz
+    variant: '@variant4'
+  attribute22:
+    name: Boost Clock
+    description: 1.785 MHz
+    variant: '@variant4'
+  attribute23:
+    name: Boost Clock
+    description: 1.650 MHz
+    variant: '@variant3'
+  attribute24:
+    name: Memory Size
+    description: 12 GB
+    product: '@product4'
+  attribute25:
+    name: Memory Type
+    description: GDDR6
+    product: '@product4'
+  attribute26:
+    name: Memory Size
+    description: 24 GB
+    product: '@product5'
+  attribute27:
+    name: Output
+    description: 3x Display Port
+    product: '@product4'
+  attribute28:
+    name: Output
+    description: 3x Display Port, HDMI
+    variant: '@variant5'
+  attribute29:
+    name: Boost Clock
+    description: 1.807 MHz
+    variant: '@variant5'
+  attribute30:
+    name: Output
+    description: 3x Display Port, 2x HDMI
+    variant: '@variant6'
+  attribute31:
+    name: Boost Clock
+    description: 1.777 MHz
+    variant: '@variant6'
+  attribute32:
+    name: TDP
+    description: 170 Watt
+    variant: '@variant6'
+  attribute33:
+    name: Memory Clock
+    description: 9.750 MHz
+    product: '@product5'
+  attribute34:
+    name: Memory Type
+    description: GDDR6X
+    product: '@product5'
+  attribute35:
+    name: Bandwidth
+    description: 936 GB/s
+    product: '@product5'
+  attribute36:
+    name: Memory Bus
+    description: 384 Bit
+    product: '@product5'
+  attribute37:
+    name: Base Clock
+    description: 1.400 MHz
+    variant: '@variant7'
+  attribute38:
+    name: TDP
+    description: 350 Watt
+    variant: '@variant7'
+  attribute39:
+    name: Boost Clock
+    description: 1.860 MHz
+    variant: '@variant8'
+  attribute40:
+    name: Display Size
+    description: 6,6 Zoll / 16,76 cm
+    product: '@product1'
+  attribute41:
+    name: Display Resolution
+    description: 2.700 x 1.228 Pixel / Full HD
+    product: '@product1'
+  attribute42:
+    name: Pixel Density
+    description: 450 ppi
+    product: '@product1'
+  attribute43:
+    name: Processor Type
+    description: Snapdragon 888
+    product: '@product1'
+  attribute44:
+    name: Processor Core
+    description: Octa-Core (8)
+    product: '@product1'
+  attribute45:
+    name: max CPU-Clock
+    description: 2,8 GHz
+    product: '@product1'
+  attribute46:
+    name: Battery
+    description: 4.360 mAh
+    product: '@product1'
+  attribute47:
+    name: Weight
+    description: 195 g
+    product: '@product1'
+  attribute48:
+    name: RAM
+    description: 8 GB
+    variant: '@variant9'
+  attribute49:
+    name: Color
+    description: Cocoa Gold
+    variant: '@variant9'
+  attribute50:
+    name: Color
+    description: Golden Black
+    variant: '@variant9'
+  attribute51:
+    name: Display Size
+    description: 6,5 Inches / 16,51 cm
+    product: '@product2'
+  attribute52:
+    name: Display Resolution
+    description: 1.600 x 720 Pixels / HD
+    product: '@product2'
+  attribute53:
+    name: Pixel Density
+    description: 264 ppi
+    product: '@product2'
+  attribute54:
+    name: Processor Type
+    description: Helio P35
+    product: '@product2'
+  attribute55:
+    name: max. CPU-Clock
+    description: 2,3 GHz
+    product: '@product2'
+  attribute56:
+    name: GPU
+    description: PowerVR GE8320
+    product: '@product2'
+  attribute57:
+    name: Operating System
+    description: Android 11
+    product: '@product2'
+  attribute58:
+    name: Battery
+    description: 5.000 mAh
+    product: '@product2'
+  attribute59:
+    name: Color
+    description: Blue
+    variant: '@variant1'
+  attribute60:
+    name: Color
+    description: White
+    variant: '@variant2'
+  attribute61:
+    name: Internal Storage
+    description: 64 GB
+    variant: '@variant1'
+  attribute62:
+    name: Processor Core
+    description: Octa-Core (8)
+    product: '@product2'
+  attribute63:
+    name: Bus Interface
+    description: PCIe
+    product: '@product4'
+  attribute64:
+    name: max. resolution
+    description: 7680 x 4320 pixels
+    product: '@product4'
+  attribute65:
+    name: max. resolution
+    description: 7680 x 4320 pixels
+    product: '@product5'
+  attribute66:
+    name: RAM
+    description: 4 GB
+    variant: '@variant2'
+  attribute67:
+    name: Boost Clock
+    description: 1.785 MHz
+    variant: '@variant7'
+  attribute68:
+    name: Output
+    description: 3x Display Port, 2x HDMI
+    variant: '@variant7'
+  attribute69:
+    name: Base Clock
+    description: 1.400 MHz
+    variant: '@variant8'
+  attribute70:
+    name: TDP
+    description: 350 Watts
+    variant: '@variant8'
+  attribute71:
+    name: Internal Storage
+    description: 256 GB
+    variant: '@variant9'
+  attribute72:
+    name: RAM
+    description: 8 GB
+    variant: '@variant10'
+  attribute73:
+    name: Internal Storage
+    description: 256 GB
+    variant: '@variant10'
+  attribute74:
+    name: Product Type
+    description: NAS Drive
+    product: '@product6'
+  attribute75:
+    name: Series
+    description: Western Digital Red
+    product: '@product6'
+  attribute76:
+    name: Bus
+    description: SATA III (Sata 600) 
+    product: '@product6'
+  attribute77:
+    name: IntelliPower
+    description: 5.400-7.200 RPM Range
+    product: '@product6'
+  attribute78:
+    name: Buffer
+    description: 256 MB
+    variant: '@variant11'
+  attribute79:
+    name: Data Transfer Rate
+    description:  180 MB/s
+    variant: '@variant11'
+  attribute80:
+    name: Power Consumption (Operating)
+    description:  4.1 Watt
+    variant: '@variant11'
+  attribute81:
+    name: Power Consumption (Idle)
+    description: 2.3 Watt
+    variant: '@variant11'
+  attribute82:
+    name: Weight
+    description: 600 g
+    variant: '@variant11'
+  attribute83:
+    name: Memory Capacity
+    description:  12 TB
+    variant: '@variant12'
+  attribute84:
+    name: RPMs
+    description: 7,200 rpm
+    variant: '@variant12'
+  attribute85:
+    name:  Buffer
+    description: 256 MB
+    variant: '@variant12'
+  attribute86:
+    name: Data Transfer Rate
+    description: 196 MB/s
+    variant: '@variant12'
+  attribute87:
+    name: Power Consumption (Operating)
+    description: 6.3 Watt
+    variant: '@variant12'
+  attribute88:
+    name: Power Consumption (Idle)
+    description: 2.9 Watt
+    variant: '@variant12'
+  attribute89:
+    name: Weight
+    description: 660 g
+    variant: '@variant12'
+  attribute90:
+    name: Product Type
+    description: Internal SSD (Solid State Drive)
+    product: '@product7'
+  attribute91:
+    name: Read Speed
+    description: 560 MB/s
+    product: '@product7'
+  attribute92:
+    name: Write Speed
+    description: 530 MB/s
+    product: '@product7'
+  attribute93:
+    name: Memory Type
+    description: 3D V-NAND
+    product: '@product7'
+  attribute94:
+    name: Buffer
+    description: 4,096 MB
+    variant: '@variant13'
+  attribute95:
+    name: Read Speed
+    description: 560 MB/s
+    variant: '@variant13'
+  attribute96:
+    name: Write Speed
+    description: 530 MB/s
+    variant: '@variant13'
+  attribute97:
+    name: Capacity
+    description: 4,000 GB
+    variant: '@variant13'
+  attribute98:
+    name: Product Types
+    description: Wireless Router, Mobile Wi-Fi Hotspot
+    product: '@product9'
+  attribute99:
+    name: Interfaces
+    description: 1x RJ-45 (WAN)
+    product: '@product9'
+  attribute100:
+    name: Status Indicator
+    description: LED
+    product: '@product9'
+  attribute101:
+    name: Wi-Fi Frequency Band
+    description: 2.4 GHz
+    product: '@product9'
+  attribute102:
+    name: Transfer Rate
+    description: 300 Mbps
+    product: '@product9'
+  attribute103:
+    name: Encryptions
+    description: WEP, WPA, WPA2, WPS
+    product: '@product9'
+  attribute104:
+    name: Interfaces
+    description: 1x RJ-45 (WAN), 2x USB 3.0, 1x RJ-45 (WAN/LAN)
+    product: '@product10'
+  attribute105:
+    name: Status Indicator
+    description: LED
+    product: '@product10'
+  attribute106:
+    name: Weight
+    description: 1,782 g
+    product: '@product10'
+  attribute107:
+    name: Wi-Fi Frequency Bands
+    description: 2.4 GHz, 5.0 GHz, 6 GHz
+    product: '@product10'
+  attribute108:
+    name: Transfer Rate
+    description: 11,000 Mbps
+    product: '@product10'
+  attribute109:
+    name: RAM
+    description: 1,024 MB
+    product: '@product10'
+  attribute110:
+    name: Encryptions
+    description: WPA, WPA2, WPS, WEP, WPA3
+    product: '@product10'
+  attribute111:
+    name: Product Type
+    description:
+    product: '@product11'
+  attribute112:
+    name: Interfaces
+    description: 1x RJ-45 (WAN)
+    product: '@product11'
+  attribute113:
+    name: LAN Standard
+    description: Fast Ethernet (10/100 Mbps)
+    product: '@product11'
+  attribute114:
+    name: LAN Ports
+    description: 5 x RJ-45
+    product: '@product11'
+  attribute115:
+    name: LAN Protocols
+    description: NAT, PPoE, PPTP, L2TP
+    product: '@product11'
+  attribute116:
+    name: RAM
+    description: 64 MB
+    product: '@product11'

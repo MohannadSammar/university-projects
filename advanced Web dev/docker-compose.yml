@@ -1,0 +1,61 @@
+version: "3.7"
+services:
+  db:
+    image: mysql:5.7
+    command:
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
+      - --skip-character-set-client-handshake
+    environment:
+      - MYSQL_ROOT_PASSWORD=rootpwd
+      - MYSQL_DATABASE=techtinder
+      - MYSQL_USER=techtinder
+      - MYSQL_PASSWORD=techtinder-pwd
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+  backend:
+    build: ./packages/backend
+    working_dir: /var/app/backend
+    volumes:
+      - ./packages/backend:/var/app/backend
+      - node_modules_backend:/var/app/backend/node_modules
+    command: npm run watch
+    ports:
+      - "3010:3010"
+    environment:
+      NODE_ENV: development
+      DBHOST: db
+      DBUSER: techtinder
+      DBPASSWORD: techtinder-pwd
+      DBDATABASE: techtinder
+      APP_URL: http://localhost:3010
+      JWT_SECRET: hp8URB4ZRIF9EJZcWj76MYgYttvVlTMMFUVxCR5m2WL4GcRs
+      appID_prod: KarstenH-TechTind-PRD-9bbcd3ee2-4bd0e65c
+      appID_sandbox: SBX-a0e5e2a11809-4a43-4619-b8a6-c048
+      clientSecret_prod: PRD-bbcd3ee20a00-1d23-4c9f-89e7-09b5
+      clientSecret_sandbox: SBX-a0e5e2a11809-4a43-4619-b8a6-c048
+
+    depends_on:
+      - db
+
+  frontend:
+    build: ./packages/frontend
+    working_dir: /var/app/frontend
+    ports:
+      - 3000:3000
+    command: npm run watch
+    stdin_open: true
+    volumes:
+      - ./packages/frontend:/var/app/frontend
+      - node_modules_frontend:/var/app/frontend/node_modules
+    environment:
+      REACT_APP_API_ULR: http://backend:3010/api
+      CHOKIDAR_USEPOLLING: "true"
+
+volumes:
+  node_modules_backend: {}
+  node_modules_frontend: {}
+  mysql_data: {}

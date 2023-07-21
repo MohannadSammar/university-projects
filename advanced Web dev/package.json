@@ -1,0 +1,16 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "init": "lerna bootstrap",
+    "start": "lerna run start",
+    "build": "lerna run build",
+    "watch": "lerna run watch --stream",
+    "test": "lerna run test --scope=tech-tinder-backend --stream",
+    "schema:sync": "lerna run schema:sync --scope=tech-tinder-backend --stream",
+    "fixtures": "lerna run fixtures --scope=tech-tinder-backend --stream"
+  },
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  }
+}

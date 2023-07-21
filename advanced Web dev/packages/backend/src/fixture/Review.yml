@@ -1,0 +1,38 @@
+entity: Review
+items:
+  review{1..200}:
+    title: '{{lorem.words}}'
+    text: '{{lorem.paragraph}}'
+    rating: '3'
+    product: '@product0'
+    user: '@user($current)'
+  review{201..400}:
+    title: '{{lorem.words}}'
+    text: '{{lorem.paragraph}}'
+    rating: '4'
+    product: '@product1'
+    user: '@user($current)'
+  review{401..600}:
+    title: '{{lorem.words}}'
+    text: '{{lorem.paragraph}}'
+    rating: '5'
+    product: '@product2'
+    user: '@user($current)'
+  review{601..800}:
+    title: '{{lorem.words}}'
+    text: '{{lorem.paragraph}}'
+    rating: '4'
+    product: '@product3'
+    user: '@user($current)'
+  review{801..1000}:
+    title: '{{lorem.words}}'
+    text: '{{lorem.paragraph}}'
+    rating: '1'
+    product: '@product4'
+    user: '@user($current)'
+  review{1001..1200}:
+    title: '{{lorem.words}}'
+    text: '{{lorem.paragraph}}'
+    rating: '2'
+    product: '@product5'
+    user: '@user($current)'
